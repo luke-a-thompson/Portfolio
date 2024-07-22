@@ -1,1 +1,1 @@
-A simple HTML/CSS portfolio website. This is a more exhaustive than my resume.
+A simple HTML/CSS portfolio website, more exhaustive than my resume.
