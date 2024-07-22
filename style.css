@@ -150,19 +150,24 @@ hr {
     margin-top: 40px;
 }
 #featured-talks .row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     padding-bottom: 30px;
 }
 .card {
-    grid-column: span 3;
+    grid-column: span 4; /* Span 4 columns */
     vertical-align: top;
-    background-color: #eee;
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 3px;
-    padding: 5px;
-    background-color: white;
-    padding-bottom: 10px;
+    padding: 20px; /* Increased padding for more space inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    text-align: center; /* Center align text */
 }
 @media (max-width: 991px) {
     .card {
@@ -178,15 +183,15 @@ hr {
     width: 100%;
 }
 .cdesc {
-    height: 30px;
-    vertical-align: top;
     margin-bottom: 10px;
     font-size: 15px;
+    word-wrap: break-word; /* Ensure text wraps within the card */
+    padding: 10px; /* Ensure padding around text */
+    flex-grow: 1; /* Allow description to take available space */
 }
 @media (max-width: 768px) {
     .cdesc {
         font-size: 14px;
-        padding-bottom: 10px;
     }
 }
 #pet-projects .row {
@@ -202,12 +207,21 @@ hr {
     float: left;
     margin-right: 10px;
 }
+.pico_long {
+    float: left;
+    margin-right: 10px;
+}
 .pdesc {
 }
 .pend {
     clear: both;
 }
 .pico img {
+    height: 105px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+.pico_long img {
     height: 80px;
     border-radius: 5px;
     border: 1px solid #999;
