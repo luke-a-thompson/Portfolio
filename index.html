@@ -1,91 +1,101 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Luke Thompson</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
 
-    <!-- idea: have a javascript animated loss function converging in the header? :p -->
-    <div id="dhead" class="container">
-      <div class="row">
-        <div id="dpic">
-          <img src="assets/Me_blur.png" class="ppic" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Luke Thompson</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <!-- idea: have a javascript animated loss function converging in the header? :p -->
+  <div id="dhead" class="container">
+    <div class="row">
+      <div id="dpic">
+        <img src="assets/Me_blur.png" class="ppic" />
+      </div>
+      <div id="ddesc">
+        <h1>Luke Thompson</h1>
+        <h2>PhD Candidate - Computer Science & Applied Mathematics</h2>
+        <div id="dico">
+          <a href="https://github.com/leftwinglow"><img src="assets/Github.svg" class="iico" /></a>
+          <a href="Documents/Luke_Thompson_CV.pdf"><img src="assets/Resume.png" class="iico" /></a>
+          <img src="assets/Email.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
         </div>
-        <div id="ddesc">
-          <h1>Luke Thompson</h1>
-          <h2>PhD Candidate - Machine Learning & Computational Pharmacology</h2>
-          <div id="dico">
-            <a href="https://github.com/leftwinglow"><img src="assets/Github.svg" class="iico"/></a>
-            <a href="Documents/Luke_Thompson_CV.pdf"><img src="assets/Resume.png" class="iico"/></a>
-            <img src="assets/Email.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
-          </div>
-          <div id="demail"></div> <!-- will reveal email -->
-        </div>
+        <div id="demail"></div> <!-- will reveal email -->
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="history" class="container">
+
+    <div class="entry row">
+      <div class="timespan">
+        2024 -
+      </div>
+      <div class="ico">
+        <div class="entry-dot"></div>
+        <img src="assets/USYD.png" />
+      </div>
+      <div class="desc">
+        I began my PhD in computer science focused on graph neural networks at the University of Sydney. I work on AI
+        for science with a focus on molecular dynamics and stochastic models.
+        I am also a casual academic teaching third year and masters students in classical machine learning and Bayesian
+        methods.
       </div>
     </div>
 
-    <hr>
-
-    <div id="history" class="container">
-
-      <div class="entry row">
-        <div class="timespan">
-          2024 -
-        </div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="assets/USYD.png" />
-        </div>
-        <div class="desc">
-          I began my PhD in computer science focused on graph neural networks at the University of Sydney. I am also a casual academic teaching second and third year pharmacology.
-        </div>
+    <div class="entry row">
+      <div class="timespan">
+        2024 -
       </div>
-
-      <div class="entry row">
-        <div class="timespan">
-          2024 -
-        </div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="assets/Kumon.png" />
-        </div>
-        <div class="desc">
-          I brought population forecasting in-house with an autoregressive model saving $26 000 annually and achieved best-in-company accuracy for student number forecasting using SARIMAX.
-          I also maintain Kumon's main geographic data dashboard which guides business decisions.
-        </div>
+      <div class="ico">
+        <div class="entry-dot"></div>
+        <img src="assets/Kumon.png" />
       </div>
-
-      <div class="entry row">
-        <div class="timespan">
-          2023 - 2024
-        </div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="assets/USYD.png" />
-        </div>
-        <div class="desc">
-          First Class Honours at the University of Sydney.
-          I built the world's third best model for mutagenicity prediction from chemical structure using a graph transformer neural network.
-          <br><b>WAM</b>: 86.6 (<!--<a href="Documents/B.Sc (Hons) Completion.pdf">Completion Letter</a>, --><a href="Documents/Graph_Transformer_Neural_Networks_for_Mutagenicity_Prediction.pdf">Thesis</a>, <a href="Documents/B.Sc (Hons) Transcript.pdf">Transcript</a>)
-        </div>
+      <div class="desc">
+        I lead a project to update several legacy VisualBasic data pipelines to a Rust/Postgres backend, achieving a
+        >95% reduction in data processing time.
+        I also maintain Kumon's main geographic data dashboard which guides business decisions.
       </div>
+    </div>
 
-      <div class="entry row">
-        <div class="timespan">
-          2021 - 2023
-        </div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="assets/USYD.png" />
-        </div>
-        <div class="desc">
-          Bachelor of Science: Pharmacology and Medical Science.
-          <!-- <br><b>WAM</b>: 80 (<a href="Documents/B.Sc Completion.pdf">Completion Letter</a>,<a href="Documents/B.Sc Transcript.pdf">Transcript</a>) -->
-        </div>
+    <div class="entry row">
+      <div class="timespan">
+        2023 - 2024
       </div>
+      <div class="ico">
+        <div class="entry-dot"></div>
+        <img src="assets/USYD.png" />
+      </div>
+      <div class="desc">
+        First Class Honours at the University of Sydney.
+        I built the world's best model for mutagenicity prediction from chemical structure using a graph
+        transformer neural network. It was published in an American Chemical Society journal <a
+          href="https://pubs.acs.org/doi/full/10.1021/acs.chemrestox.4c00466" target="_blank">here</a>.
+        <br><b>WAM</b>: 86.6 (<!--<a href="Documents/B.Sc (Hons) Completion.pdf">Completion Letter</a>, --><a
+          href="Documents/Graph_Transformer_Neural_Networks_for_Mutagenicity_Prediction.pdf">Thesis</a>, <a
+          href="Documents/B.Sc (Hons) Transcript.pdf">Transcript</a>)
+      </div>
+    </div>
+
+    <div class="entry row">
+      <div class="timespan">
+        2021 - 2023
+      </div>
+      <div class="ico">
+        <div class="entry-dot"></div>
+        <img src="assets/USYD.png" />
+      </div>
+      <div class="desc">
+        Bachelor of Science: Pharmacology and Medical Science.
+        <!-- <br><b>WAM</b>: 80 (<a href="Documents/B.Sc Completion.pdf">Completion Letter</a>,<a href="Documents/B.Sc Transcript.pdf">Transcript</a>) -->
+      </div>
+    </div>
 
     <!--End Timeline-->
 
@@ -95,13 +105,15 @@
         <div class="row">
           <div class="card">
             <div class="ccimg"><img src="Documents/Edge_Encoding_Slide.png" /></div>
-            <div class="cdesc">Discussing AmesFormer at the Australian federal chemical regulator: AICIS (<a href="Documents/AICIS Presentation.pdf">slides</a>)</div>
+            <div class="cdesc">Discussing AmesFormer at the Australian federal chemical regulator: AICIS (<a
+                href="Documents/AICIS Presentation.pdf">slides</a>)</div>
           </div>
           <div class="card">
             <!-- <a href="https://www.youtube.com/watch?v=bZQun8Y4L2A"> -->
             <div class="ccimg"><img src="assets/AmesFormerStructute.png" /></div>
             <!-- </a> -->
-            <div class="cdesc">Discussing AmesFormer at the ACTRA Annual Scientific Meeting in Canberra, Aug 2024, Awarded Student Prize (<a href="Documents/ACTRA Presentation.pdf">slides</a>)</div>
+            <div class="cdesc">Discussing AmesFormer at the ACTRA Annual Scientific Meeting in Canberra, Aug 2024,
+              Awarded Student Prize (<a href="Documents/ACTRA Presentation.pdf">slides</a>)</div>
           </div>
           <div class="card">
             <a href="Documents/Ames_Graphormer_Poster.pdf">
@@ -117,80 +129,107 @@
       <div class="ctitle">Projects</div>
 
       <div class="project">
-        <div class="pico"><img src="assets/CWIC.png" /></div>
-        <div class="pdesc"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1458561226">Cold War: Iron Curtain</a> is a popular mod for the video game Hearts of Iron IV. I have run a team of ~30 volunteer developers since 2017, recently achieving 600 000 unique downloads in 2023. We're currently one of the most popular cold war strategy games worldwide.</div>
-        <div class="pend"></div>
-      </div>
-
-      <div class="project">
-        <div class="pico_long"><img src="assets/Eigen2.webp" /></div>
-        <div class="pdesc"><a href="https://github.com/luke-a-thompson/eigen-squared">Eigen<sup>2</sup></a> is a Python library for calculating eigenvector-eigenvalue pairs. I implemented >10 different algorithms, including Cholesky decomposition, Givens rotation QR decompositions, and the Tao eigenvector-from-eigenvalue method, among others.</div>
-        <div class="pend"></div>
-      </div>
-
-      <div class="project">
         <!-- <div class="pico_long"><img src="assets/Eigen2.webp" /></div> -->
-        <div class="pdesc"><a href="https://github.com/luke-a-thompson/FastASX">FastDAQ</a> is the world's fastest open-source NASDAQ/ASX ITCH file and datastream parser (excepting FPGA implementations). Built in Rust.</div>
+        <div class="pdesc"><a href="https://github.com/luke-a-thompson/QuickSig">QuickSig</a> is a Jax library for
+          computing path signatures, log signatures, solving rough differential equations (RDEs), and more. It is
+          currently the
+          most complete library for rough paths, and I am currently working on including two Rust algorithms for
+          computing the Baker-Campbell-Hausdorff series to allow more efficient computation of Lie series for RDE
+          tasks.</div>
         <div class="pend"></div>
       </div>
     </div>
 
-    <div style="background-color: #eee; padding-top: 1px; margin-top: 50px; padding-bottom: 30px;">
+    <div class="project">
+      <div class="pico"><img src="assets/CWIC.png" /></div>
+      <div class="pdesc"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1458561226">Cold War: Iron
+          Curtain</a> is a popular mod for the video game Hearts of Iron IV. I have run a team of ~30 volunteer
+        developers since 2017, recently achieving 600 000 unique downloads in 2023. We're currently one of the most
+        popular cold war strategy games worldwide.</div>
+      <div class="pend"></div>
+    </div>
+
+    <div class="project">
+      <div class="pico_long"><img src="assets/Eigen2.webp" /></div>
+      <div class="pdesc"><a href="https://github.com/luke-a-thompson/eigen-squared">Eigen<sup>2</sup></a> is a Python
+        library for calculating eigenvector-eigenvalue pairs. I implemented >10 different algorithms, including
+        Cholesky decomposition, Givens rotation QR decompositions, and the Tao eigenvector-from-eigenvalue method,
+        among others.</div>
+      <div class="pend"></div>
+    </div>
+
+    <div class="project">
+      <!-- <div class="pico_long"><img src="assets/Eigen2.webp" /></div> -->
+      <div class="pdesc"><a href="https://github.com/luke-a-thompson/FastASX">FastDAQ</a> is the world's fastest
+        open-source NASDAQ/ASX ITCH file and datastream parser (excepting FPGA implementations). Built in Rust.</div>
+      <div class="pend"></div>
+    </div>
+  </div>
+
+  <div style="background-color: #eee; padding-top: 1px; margin-top: 50px; padding-bottom: 30px;">
     <div class="container">
       <div class="ctitle">Writings & Selected Notebooks</div>
       <ul class="nodot">
-        <li>Honours Thesis: <a href="Documents/Graph_Transformer_Neural_Networks_for_Mutagenicity_Prediction.pdf" target="_blank">AmesFormer: Graph Transformer Neural Networks for Mutagenicity Prediction</a></li>
-        <li>A brief data-oriented paper critique: <a href="Notebooks/Li Insignificance.html">Unsatisfactory evidence for the significance of findings in Lu, et al. (2024)</a></li>
+        <li>Honours Thesis: <a href="Documents/Graph_Transformer_Neural_Networks_for_Mutagenicity_Prediction.pdf"
+            target="_blank">AmesFormer: Graph Transformer Neural Networks for Mutagenicity Prediction</a></li>
+        <li>A brief data-oriented paper critique: <a href="Notebooks/Li Insignificance.html">Unsatisfactory evidence
+            for the significance of findings in Lu, et al. (2024)</a></li>
       </ul>
     </div>
-    </div>
+  </div>
 
 
-    <!-- <div class="container">
-      <div class="ctitle">Publications</div>
+  <div class="container">
+    <div class="ctitle">Publications</div>
 
-      <div class="pub">
-        <div class="pub-title"><a href="">AmesFormer: A Graph Transformer Neural Network for Prediction of Ames Mutagenicity</a></div>
-        <div class="pub-venue">arXiv</div>
-        <div class="pub-authors">Luke Thompson, Josiah Evans, Slade Matthews</div>
+    <div class="pub">
+      <div class="pub-title"><a
+          href="https://pubs.acs.org/doi/full/10.1021/acs.chemrestox.4c00466">https://pubs.acs.org/doi/10.1021/acs.chemrestox.4c00466</a>
       </div>
-    </div> -->
-
-    <div class="container">
-      <div class="ctitle">Other Things I've Done</div>
-      <ul style="padding-left: 10px;">
-        <li>I won a grant for an all expenses paid trip to the annual scientific meeting of the Australasian College of Toxicology and Risk Assessment in Canberra to present my research.</li>
-        <li>Two trailers I made to announce updates to my personal project: Cold War: Iron Curtain.</li>
-          <div style="display: flex; gap: 10px;">
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; width: 100%;">
-              <div style="flex: 1 1 400px; min-width: 300px;">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/MKFCxvMmh0o?si=1DTSq3cA01o_kFpY" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <div style="flex: 1 1 400px; min-width: 300px;">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/r-AZTy6N9Bw?si=7k7GvI8YSulFMbgb" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        <li>This website was heavily inspired by Andrej Karpathy's site.</li>
-      </ul>
+      <div class="pub-venue">Chemical Research in Toxicology - ACS</div>
+      <div class="pub-authors">Luke Thompson, Josiah Evans, Slade Matthews</div>
     </div>
+  </div>
 
-    <br><br><br><br><br><br><br><br><br>
+  <div class="container">
+    <div class="ctitle">Other Things I've Done</div>
+    <ul style="padding-left: 10px;">
+      <li>I won a grant for an all expenses paid trip to the annual scientific meeting of the Australasian College of
+        Toxicology and Risk Assessment in Canberra to present my research.</li>
+      <li>Two trailers I made to announce updates to my personal project: Cold War: Iron Curtain.</li>
+      <div style="display: flex; gap: 10px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; width: 100%;">
+          <div style="flex: 1 1 400px; min-width: 300px;">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/MKFCxvMmh0o?si=1DTSq3cA01o_kFpY"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div style="flex: 1 1 400px; min-width: 300px;">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/r-AZTy6N9Bw?si=7k7GvI8YSulFMbgb"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <li>This website was heavily inspired by Andrej Karpathy's site.</li>
+    </ul>
+  </div>
 
-    <!-- attempt hiding from spambots :p -->
-    <script type="text/javascript">
-      const rot13 = (message) => {
-        const alpha = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM';
-        return message.replace(/[a-z]/gi, letter => alpha[alpha.indexOf(letter) + 13]);
-      }
-      var e_is_shown = false;
-      document.getElementById('iemail').addEventListener("click", function(){
-        let demail = document.getElementById('demail');
-        let msg = "yhxr-n-gubzcfba@bhgybbx.pbz"
-        demail.innerHTML = rot13(msg);
-        demail.style.opacity = e_is_shown ? 0 : 1;
-        e_is_shown = !e_is_shown;
-      })
-    </script>
-  </body>
+  <br><br><br><br><br><br><br><br><br>
+
+  <!-- attempt hiding from spambots :p -->
+  <script type="text/javascript">
+    const rot13 = (message) => {
+      const alpha = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM';
+      return message.replace(/[a-z]/gi, letter => alpha[alpha.indexOf(letter) + 13]);
+    }
+    var e_is_shown = false;
+    document.getElementById('iemail').addEventListener("click", function () {
+      let demail = document.getElementById('demail');
+      let msg = "yhxr-n-gubzcfba@bhgybbx.pbz"
+      demail.innerHTML = rot13(msg);
+      demail.style.opacity = e_is_shown ? 0 : 1;
+      e_is_shown = !e_is_shown;
+    })
+  </script>
+</body>
+
 </html>
